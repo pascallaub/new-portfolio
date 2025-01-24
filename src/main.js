@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const leftRatio = 0.22;
         pillDivs[0].style.top  = (rect.top  + rect.height * topRatio) + 'px';
         pillDivs[0].style.left = (rect.left + rect.width  * leftRatio) + 'px';
-        pillDivs[0].style.width  = '50px'; // Du kannst hier ebenfalls skalieren
+        pillDivs[0].style.width  = '50px'; 
         pillDivs[0].style.height = '50px';
       }
 
