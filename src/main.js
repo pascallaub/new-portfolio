@@ -28,4 +28,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', updatePositions);
     updatePositions();
-  });
+});
+  
+document.addEventListener('DOMContentLoaded', () => {
+  const portfolioLink = document.querySelector('a[href="/portfolio"]');
+  if (portfolioLink) {
+    portfolioLink.addEventListener('click', function(e) {
+      e.preventDefault();  // Verhindere sofortiges Navigieren
+
+      // Klasse an body anfügen -> CSS-Transitionen starten
+      document.body.classList.add('zoom-out');
+
+      // Nach der Animationsdauer (700ms) wirklich wechseln
+      setTimeout(() => {
+        window.location.href = this.href;
+      }, 700);
+    });
+  }
+});

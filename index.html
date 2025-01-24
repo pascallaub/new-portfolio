@@ -10,7 +10,7 @@
     <title>Welcome</title>
   </head>
   <body class="h-screen w-screen text-white relative overflow-hidden">
-      <img src="/morpheus.png" alt="morpheus" class="h-screen mx-auto relative z-10"/>
+      <img src="/morpheus.png" alt="morpheus" id="zoom-morpheus" class="h-screen mx-auto relative z-10"/>
       <div class="group absolute z-20" style="top: 67%; left: 33%; width: 50px; height: 50px;">
         <a href="/portfolio" class="block w-full h-full bg-transparent opacity-0">
         </a>
@@ -25,5 +25,6 @@
         </div>
       </div>
       <div class="cloud absolute inset-0 w-full h-full z-0 pointer-events-none"></div>
+      <iframe id="portfolio-iframe" src="/portfolio"></iframe>
   </body>
 </html>
