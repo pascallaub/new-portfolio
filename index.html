@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" class="h-full bg-stone-950">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css">
+    <script type="module" src="/src/main.js" defer></script>
+    <script type="module" src="src/rain.js" defer></script>
+    <title>Welcome</title>
+  </head>
+  <body class="h-screen w-screen text-white relative overflow-hidden">
+      <img src="/morpheus.png" alt="morpheus" class="h-screen mx-auto relative z-10"/>
+      <div class="group absolute z-20" style="top: 67%; left: 33%; width: 50px; height: 50px;">
+        <a href="/portfolio" class="block w-full h-full bg-transparent opacity-0">
+        </a>
+        <div class="hidden group-hover:flex absolute -top-40 left-1/2 -translate-x-1/2 w-72 h-40 bg-stone-900 text-white items-center justify-center rounded-full text-center transition-all duration-300 z-30">
+          <img src="/portfolio.png" alt="portfolio" class="object-cover w-full h-full rounded-full">
+        </div>
+      </div>
+      <div class="group absolute z-20" style="top: 67%; left: 64%; width: 50px; height: 50px;">
+        <a href="http://bbc.com" class="block w-full h-full bg-transparent opacity-0"></a>
+        <div class="hidden group-hover:flex absolute -top-40 left-1/2 -translate-x-1/2 w-72 h-40 bg-stone-900 text-white items-center justify-center rounded-full text-center transition-all duration-300 z-30">
+          <img src="/bbc.png" alt="portfolio" class="object-cover w-full h-full rounded-full">
+        </div>
+      </div>
+      <div class="cloud absolute inset-0 w-full h-full z-0 pointer-events-none"></div>
+  </body>
+</html>
